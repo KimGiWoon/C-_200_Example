@@ -82,6 +82,7 @@
     <Compile Remove="Example_71.cs" />
     <Compile Remove="Example_72.cs" />
     <Compile Remove="Example_73.cs" />
+    <Compile Remove="Example_74.cs" />
   </ItemGroup>
 
 </Project>
