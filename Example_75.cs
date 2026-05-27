@@ -12,6 +12,7 @@ namespace C__200_Example
         static void Main(string[] args)
         {
             int number = 0;
+            int fact;
 
             Console.WriteLine("팩토리얼 구하기!");
             Console.Write("팩토리얼을 구할 숫자를 입력하세요 : ");
@@ -22,7 +23,13 @@ namespace C__200_Example
                 Console.Write("1이상 15이하의 숫자를 입력하세요 : ");
             }
 
+            // 메서드 호출
             FactorialCal(number);
+
+            // 메서드 반환 값 저장
+            fact = FactorialCalRetune(number);
+
+            Console.WriteLine($"메서드 반환한 값 출력 : {number}! = {fact:N0}");
         }
 
         // 입력 숫자 팩토리얼 계산
@@ -35,7 +42,20 @@ namespace C__200_Example
                 fact *= i;
             }
 
-            Console.WriteLine($"{number}! = {fact:N0}");
+            Console.WriteLine($"메서드 호출 : {number}! = {fact:N0}");
+        }
+
+        // 입력 숫자 팩토리얼 계산 후 반환
+        private static int FactorialCalRetune(int number)
+        {
+            int fact = 1;
+
+            for (int i = 1; i <= number; i++)
+            {
+                fact *= i;
+            }
+
+            return fact;
         }
     }
 }
