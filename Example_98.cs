@@ -48,5 +48,11 @@ namespace C__200_Example
                 return default(T);
             }
         }
+
+        // 스택 쌓을 수 있는 최대 수 가져오기
+        public int GetStackCount()
+        {
+            return arr.Count();
+        }
     }
 }
