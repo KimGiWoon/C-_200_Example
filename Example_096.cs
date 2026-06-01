@@ -12,8 +12,8 @@ namespace C__200_Example
     // Node 사용 클래스
     internal class Node
     {
-        internal int _nodeData;
-        internal Node _nextNode;
+        private int _nodeData;
+        private Node _nextNode;
 
         public Node(int data)
         {
@@ -50,7 +50,7 @@ namespace C__200_Example
     // LinkedList 사용 클래스
     internal class LinkedList
     {
-        Node _headNode;
+        private Node _headNode;
 
         // 헤드 노드 설정
         internal void SetHeadNode(Node node)
