@@ -103,6 +103,7 @@
     <Compile Remove="Example_92.cs" />
     <Compile Remove="Example_93.cs" />
     <Compile Remove="Example_94.cs" />
+    <Compile Remove="Example_95.cs" />
   </ItemGroup>
 
 </Project>

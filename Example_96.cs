@@ -7,23 +7,15 @@ using System.Threading.Tasks;
 // LinkedList 구현 (연결 리스트)
 namespace C__200_Example
 {
-    //internal class Example_96
-    //{
-    //    static void Main(string[] args)
-    //    {
-
-    //    }
-    //}
-
     // internal은 어셈블리 내부에서 public, 외부에서 private와 같은 역할을 함
     //-----------------------------------------------------------------------------------------
     // Node 사용 클래스
     internal class Node
     {
-        private int _nodeData;
-        private Node _nextNode;
+        internal int _nodeData;
+        internal Node _nextNode;
 
-        internal Node(int data)
+        public Node(int data)
         {
             _nodeData = data;
             _nextNode = null;
@@ -58,7 +50,7 @@ namespace C__200_Example
     // LinkedList 사용 클래스
     internal class LinkedList
     {
-        private Node _headNode;
+        Node _headNode;
 
         // 헤드 노드 설정
         internal void SetHeadNode(Node node)
@@ -76,8 +68,8 @@ namespace C__200_Example
         internal Node GetLastNode()
         {
             Node lastNode = GetHeadNode();
-
-            while (lastNode.GetNextNode != null)
+            
+            while (lastNode.GetNextNode() != null)
             {
                 lastNode = lastNode.GetNextNode();
             }
@@ -130,6 +122,7 @@ namespace C__200_Example
 
             if (temp == null)    // 끝까지 찾는 값이 없으면 나가기
             {
+                Console.WriteLine("삭제할 노드가 없습니다.");
                 return;
             }
 
@@ -152,7 +145,7 @@ namespace C__200_Example
                 currentNode = temp;
             }
 
-            SetHeadNode(temp);
+            SetHeadNode(previousNode);
         }
 
         // 맨 앞에 노드 추가
