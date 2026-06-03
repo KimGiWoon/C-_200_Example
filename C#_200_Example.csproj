@@ -124,6 +124,7 @@
     <Compile Remove="Example_103.cs" />
     <Compile Remove="Example_104.cs" />
     <Compile Remove="Example_105.cs" />
+    <Compile Remove="Example_106.cs" />
     <Compile Remove="Example_11.cs" />
     <Compile Remove="Example_12.cs" />
     <Compile Remove="Example_13.cs" />
