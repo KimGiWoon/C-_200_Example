@@ -118,6 +118,8 @@
     <Compile Remove="Example_098.cs" />
     <Compile Remove="Example_099.cs" />
     <Compile Remove="Example_10.cs" />
+    <Compile Remove="Example_100.cs" />
+    <Compile Remove="Example_101.cs" />
     <Compile Remove="Example_11.cs" />
     <Compile Remove="Example_12.cs" />
     <Compile Remove="Example_13.cs" />
