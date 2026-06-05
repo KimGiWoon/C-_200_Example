@@ -17,6 +17,13 @@ namespace C__200_Example
         {
             int[] arr = { 3, 5, 4, 2, 6, 4, 6, 8, 28, 59, 46, 9, 10 };
 
+            Console.Write($"배열의 값 : ");
+
+            foreach (int n in arr)
+            {
+                Console.Write($"{n}, ");
+            }
+
             // 홀수와 짝수 개수 출력
             Console.WriteLine($"홀수의 개수 : {Count(arr, IsOdd)}개");
             Console.WriteLine($"짝수의 개수 : {Count(arr, IsEven)}개");

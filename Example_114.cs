@@ -16,6 +16,13 @@ namespace C__200_Example
         {
             int[] arr = { 3, 5, 4, 2, 6, 4, 6, 8, 28, 59, 46, 9, 10 };
 
+            Console.Write($"배열의 값 : ");
+
+            foreach (int n in arr)
+            {
+                Console.Write($"{n}, ");
+            }
+
             int count = Count(arr, delegate (int a) { return a % 2 != 0; });    // 무명 델리케이트에 홀수 조건 전달
             Console.WriteLine($"홀수의 개수 : {count}개");
 
