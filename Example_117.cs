@@ -21,7 +21,13 @@ namespace C__200_Example
 
         static void Main(string[] args)
         {
+            // 학생 정보 생성
+            Student student1 = new Student() { Name = "기운", Age = 17 };
+            Student student2 = new Student() { Name = "찰스", Age = 25 };
+            Student student3 = new Student() { Name = "동수", Age = 29 };
+
             Func<int, int> square = x => x * x; // 제곱수를 구하는 Func 델리게이트
+
             Console.WriteLine(square(5));
 
             int[] numbers = { 2, 3, 4, 5, 6, };
@@ -38,11 +44,6 @@ namespace C__200_Example
             Console.WriteLine(subtract(10.5, 20));
 
             IsTeenAger isteen = delegate (Student student) { return student.Age > 12 && student.Age < 20; };    // 무명메서드 방식
-
-            // 학생 정보 생성
-            Student student1 = new Student() { Name = "기운", Age = 17 };
-            Student student2 = new Student() { Name = "찰스", Age = 25 };
-            Student student3 = new Student() { Name = "동수", Age = 29 };
 
             Console.WriteLine("{0}은/는 {1}", student1.Name, isteen(student1) ? "청소년입니다." : "청소년이 아닙니다.");
 
