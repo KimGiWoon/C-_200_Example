@@ -12,7 +12,7 @@ namespace C__200_Example
         static void Main(string[] args)
         {
             List<int> data = new List<int> { 123, 45, 12, 67, 878, 321, 344, 43, 2, 1 };
-            List<int> firstSortedEven = new List<int>();    // 짝수 리스트
+            List<int> evenList = new List<int>();    // 짝수 리스트
 
             Console.Write("정수 리스트 : ");
             // 짝수를 리스트에 넣기
@@ -21,15 +21,15 @@ namespace C__200_Example
                 Console.Write(value + ", ");
                 if (value % 2 == 0)
                 {
-                    firstSortedEven.Add(value);
+                    evenList.Add(value);
                 }
             }
             Console.WriteLine();
 
             // 오름차순 정렬
-            firstSortedEven.Sort();
+            evenList.Sort();
 
-            Print("\n<짝수를 판별하고 Sort()로 정렬 후 출력>", firstSortedEven);
+            Print("\n<짝수를 판별하고 Sort()로 정렬 후 출력>", evenList);
 
             // LINQ로 data에서 짝수를 찾아 오름차순으로 정렬하고 sortedEven에 추가 (from, where, orderby, select)
             var sortedEven = from value in data
