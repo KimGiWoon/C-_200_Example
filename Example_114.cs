@@ -24,7 +24,7 @@ namespace C__200_Example
             }
 
             int count = Count(arr, delegate (int a) { return a % 2 != 0; });    // 무명 델리케이트에 홀수 조건 전달
-            Console.WriteLine($"홀수의 개수 : {count}개");
+            Console.WriteLine($"\n홀수의 개수 : {count}개");
 
             count = Count(arr, delegate (int a) { return a % 2 == 0; });    // 무명 델리게이트에 짝수 조건 전달
             Console.WriteLine($"짝수의 개수 : {count}개");

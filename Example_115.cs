@@ -25,7 +25,7 @@ namespace C__200_Example
                 Console.Write($"{n}, ");
             }
 
-            Console.WriteLine("Func 델리게이트 사용");
+            Console.WriteLine("\nFunc 델리게이트 사용");
             int count = Count(arr, delegate (int a) { return a % 2 != 0; });    // 무명 델리케이트에 홀수 조건 전달
             Console.WriteLine($"홀수의 개수 : {count}개");
 

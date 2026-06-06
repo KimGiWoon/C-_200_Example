@@ -25,7 +25,7 @@ namespace C__200_Example
             }
 
             // 홀수와 짝수 개수 출력
-            Console.WriteLine($"홀수의 개수 : {Count(arr, IsOdd)}개");
+            Console.WriteLine($"\n홀수의 개수 : {Count(arr, IsOdd)}개");
             Console.WriteLine($"짝수의 개수 : {Count(arr, IsEven)}개");
             //Console.WriteLine($"짝수의 개수 : {Count(arr, IsOdd2)}개");
         }
